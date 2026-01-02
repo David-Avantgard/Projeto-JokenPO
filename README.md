@@ -31,11 +31,6 @@ assets/Favicon.png
 assets/jokenpo-demo.mp4  
 README.md  
 
-## Demonstração
-
-Vídeo mostrando o funcionamento do jogo:  
-[Assistir ao vídeo](assets/jokenpo-demo.mp4)
-
 ## Como Executar
 
 Abra o arquivo index.html em qualquer navegador.
