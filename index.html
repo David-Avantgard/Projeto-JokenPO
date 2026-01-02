@@ -1,0 +1,69 @@
+<!--
+--------------------------------------------------------------------------------------------------
+Author: David Carvalho
+Project: Jokenpô Online
+Description:
+Aplicação web do jogo clássico Pedra, Papel e Tesoura.
+O objetivo do projeto é treinar lógica de programação, eventos de clique
+e manipulação do DOM utilizando JavaScript puro.
+--------------------------------------------------------------------------------------------------
+
+Structure:
+- Interface simples e intuitiva
+- Botões para escolha do jogador
+- Placar dinâmico (Usuário x Computador)
+- Mensagens de vitória, derrota e empate
+--------------------------------------------------------------------------------------------------
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Character encoding (supports accents and special characters) -->
+    <meta charset="UTF-8">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Title -->
+    <title>Jokenpô Online</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/Favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Jokenpô</h1>
+        <h5>Treinando lógica, relaxando a mente</h5><br><br>
+
+        <p>Escolha sua jogada:</p><br>
+
+        <div class="buttons">
+            <button id="pedra" onclick="jogar('pedra')">✊ Pedra</button>
+            <button id="papel" onclick="jogar('papel')">✋ Papel</button>
+            <button id="tesoura" onclick="jogar('tesoura')">✌️ Tesoura</button>
+        </div>
+
+        <p id="resultado"></p>
+
+        <div class="placar">
+            <p>&#x1F935 Você: <span id="pontosUsuario">0</span></p>
+            <p>&#x1F4BB Computador: <span id="pontosComputador">0</span></p>
+        </div>
+
+        <div>
+            <button class="reset" onclick="resetarJogo()"> Reiniciar </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
